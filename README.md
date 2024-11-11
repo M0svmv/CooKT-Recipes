@@ -1,70 +1,60 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# COOKT - Recipe App
 
-## Available Scripts
+COOKT is a recipe app designed to help users explore and try new meals. With a fun and easy-to-use interface, you can search for recipes, browse categories and cuisines, mark favorites, and get random meal ideas.
 
-In the project directory, you can run:
 
-### `npm start`
+## Features
+- **Recipe Search**: Find recipes by typing in keywords.
+- **Favorites List**: Save your favorite recipes for easy access.
+- **Random Recipe Suggestions**: Get a random meal idea when you need inspiration.
+- **Category & Cuisine Browsing**: Explore recipes based on different cuisines and categories.
+- **Responsive Design**: Optimized for desktop and mobile.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack
+- **Frontend**: React.js, CSS, Bootstrap
+- **API**: [TheMealDB API](https://www.themealdb.com/) for fetching recipe data
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Setup
+To run this project locally, follow these steps.
 
-### `npm test`
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v14 or above)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/cookt-recipe-app.git
+   cd cookt-recipe-app
+   ```
 
-### `npm run build`
+2. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Set up environment variables:**
+   Create a `.env` file in the root and add:
+   ```bash
+   REACT_APP_API_URL=https://www.themealdb.com/api/json/v1/1
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. **Run the application:**
+   ```bash
+   npm start
+   # or
+   yarn start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The app will be available at `http://localhost:3000`.
 
-### `npm run eject`
+## Usage
+1. **Browse Recipes**: Search by keywords, explore categories, or pick a cuisine.
+2. **View Recipe Details**: Click on a recipe card for ingredients and cooking instructions.
+3. **Save Favorites**: Mark recipes as favorites to find them easily.
+4. **Try Random Recipes**: Click on the random recipe icon for meal ideas.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

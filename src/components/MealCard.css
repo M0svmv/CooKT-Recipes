@@ -1,0 +1,71 @@
+.meal-card {
+  background-image: url("../../public/imgs/paper1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2.5rem;
+  border: none !important;
+  background-color: transparent !important;
+  z-index: 20;
+  cursor:default ;
+  transition: all 0.3s ease;
+}
+.meal-card img {
+  border-radius: 0px !important;
+}
+.card-side {
+  rotate: 10deg;
+  border-radius: 2px;
+}
+
+.card-side img {
+  border-radius: 3px !important;
+  transition: all 0.7s ease;
+}
+.tape {
+  rotate: -10deg;
+  top: -30px;
+  left: -50px;
+}
+
+.meal-card h5 {
+  font-size: 2rem;
+}
+.btn-show {
+  transition: color 0.3s ease-in-out;
+  border: #d83a47;
+}
+
+.btn-show::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: #d83a47;
+  z-index: -1;
+  transition: transform 0.3s ease-in-out;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.btn-show:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+  color: #fff;
+}
+
+.btn-show:hover {
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+.meal-card:hover {
+  transform: scale(1.01);
+}
+
+.meal-card:hover .card-side img {
+  rotate: 5deg;
+  transform: scale(1.02);
+}

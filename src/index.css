@@ -1,13 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Delicious+Handrawn&family=Reenie+Beanie&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.marginOutlet {
+  margin-top: 4.4rem !important;
+}
+
+.cookit-font {
+  font-family: "Delicious Handrawn", cursive;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.cookit-font-title {
+  font-family: "Delicious Handrawn", cursive;
+  font-weight: 500;
+  font-size: 2rem;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+nav {
+  background-color: #c8a575 !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 0 !important ;
+  padding-bottom: 0 !important ;
+  height: 4.4rem !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 10000;
+}
+nav div {
+  background-color: transparent !important;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: transparent !important;
+
+  font-family: "Reenie Beanie", cursive;
+  width: 5rem;
+}
+.logo-container img {
+  filter: drop-shadow(0.5px 3px 7px rgba(0, 0, 0, 0.1));
+}
+.nav-text {
+  
+  font-family: "Delicious Handrawn", cursive;
+  color: "#48301a" !important;
+  font-size: 1.5rem !important;
+  position: relative;
+  transition: all 0.7s ease;
+}
+.nav-text::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 20%;
+  background-color: #48301a;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  transform-origin: bottom right;
+}
+.nav-text:hover::before {
+  visibility: visible;
+  width: 60%;
+}
+
+.lens-icon {
+  z-index: 2000;
+  width: 4rem;
+  bottom: -25%;
+  left: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  rotate: 0;
+  transition: all 0.7s ease !important;
+}
+
+.lens-icon img {
+  width: 100%;
+  filter: drop-shadow(0.5px 3px 7px rgba(0, 0, 0, 0.1));
+  z-index: 12004!important;
+}
+
+.lens-icon:hover {
+  rotate: -10deg;
+}
+
+.footer {
+  background-color: #c7a575 !important;
+}
+
+.dropdown-menu {
+  background-color: #e9d3bf !important;
+  border-radius: 0px !important;
+}
+.dropdown-item {
+  color: #de3f53 !important;
+  font-family: "Delicious Handrawn", cursive;
+}
+.dropdown-item:hover {
+  background-color: #eee !important;
+  color: #de3f53 !important;
+}
+.text-cookit {
+  font-family: "Delicious Handrawn", cursive;
+  color: #48301a !important;
+}
+.text-cookit-links {
+  font-family: "Delicious Handrawn", cursive;
+  color: #fef6d5!important;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.text-cookit-links:hover {
+  text-decoration: underline!important;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 10px;
+  background-color: #f8f0d6;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #48301a;
+  height: 15px !important;
 }
