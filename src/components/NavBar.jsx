@@ -72,18 +72,16 @@ function NavBar() {
           <Navbar.Collapse
             in={!isNavCollapsed}
             id="navbarScroll"
-            className="navbar-cookit collapseNav">
+            className="navbar-cookit collapseNav ">
             <Nav
-              className="me-auto my-2 my-lg-0 col-xl-6 col-lg-6 col-sm-12"
+              className="m-auto my-2 my-lg-0 col-xl-6 col-lg-6 col-sm-12"
               navbarScroll>
               <Nav.Link>
                 <NavLink
                   className="nav-link fw-bold nav-text"
                   to="/"
                   onClick={async () => {
-                    handleNavClick(() => setTimeout(resetHome, 100));
-                    await setSearchTerm("");
-                    handleScroll();
+                    await handleNavClick(resetHome);
                   }}
                   style={{ color: "#48301a" }}>
                   Home
@@ -136,21 +134,26 @@ function NavBar() {
                 Contact
               </Nav.Link>
             </Nav>
-            <NavLink
-              className="nav-link fw-bold col-lg-1 col-md-3 col-sm-2 d-flex justify-content-center align-items-center nav-text"
-              to="/favorites"
-              title="Favorites"
-              style={{ color: "#48301a" }}>
-              <img
-                src={`${process.env.PUBLIC_URL}/imgs/fridgeIcon.png`}
-                className="col-4"
-                alt="Favorites Icon"
-                onClick={() => handleNavClick(handleContact)}
-              />
-            </NavLink>
+
             <Form
-              className="d-flex col-lg-3 col-md-3 col-sm-12"
+              className="d-flex form-search col-lg-3 col-md-3 col-sm-12"
               onSubmit={(e) => e.preventDefault()}>
+              <NavLink
+                className="nav-link fw-bold col-3 fav-icon d-flex justify-content-center align-items-center nav-text"
+                to="/favorites"
+                title="Favorites"
+                style={{
+                  color: "#48301a",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}>
+                <img
+                  src={`${process.env.PUBLIC_URL}/imgs/fridgeIcon.png`}
+                  className="col-12 img-fluid justify-content-center align-items-center"
+                  alt="Favorites"
+                  onClick={() => handleNavClick(handleContact)}
+                />
+              </NavLink>
               <RecipeSearch close={() => setIsNavCollapsed(true)} />
             </Form>
           </Navbar.Collapse>

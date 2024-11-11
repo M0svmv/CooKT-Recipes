@@ -91,8 +91,7 @@
 } */
 .meal-detail {
   background-image: url("../../public/imgs/paper5.jpg");
-  min-height: calc(100vh - 4.4rem);
-  height: full !important;
+
   background-size: cover;
   padding: 5rem;
   background-repeat: repeat;
@@ -105,7 +104,46 @@
   font-size: 0.1rem !important;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1100px) {
+  .meal-detail {
+    background-image: none;
+    background-color: #eee !important;
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 0 !important;
+  }
+
+  .preview-meal {
+    width: 300px !important;
+    padding: 15px !important;
+  }
+  .preview-meal img {
+    width: 150px;
+    top: -40px !important;
+    left: -70px !important;
+  }
+  .ingrads {
+    width: 300px !important;
+    padding: 20px !important;
+    position: relative !important;
+    top: -25px !important;
+  }
+
+  .ingrads img {
+    display: none !important;
+  }
+  .instractions {
+    background-image: url("../../public/imgs/paper1n.png") !important;
+    rotate: 7deg !important;
+    width: 600px !important;
+    padding: 5px !important;
+    padding-top: 25px !important;
+  }
+  .instractions-box {
+    padding: 0px !important;
+  }
+}
+@media screen and (max-width: 500px) {
   .meal-detail {
     background-image: none;
     background-color: #eee !important;
@@ -125,6 +163,9 @@
   .ingrads {
     width: 300px !important;
     padding: 20px !important;
+    position: relative !important;
+    top: 0 !important;
+    right: 2rem;
   }
 
   .ingrads img {
@@ -136,6 +177,9 @@
     width: 300px !important;
     padding: 5px !important;
     padding-top: 25px !important;
+    position: relative !important;
+    top: -10px !important;
+    right: 2rem !important;
   }
   .instractions-box {
     padding: 0px !important;

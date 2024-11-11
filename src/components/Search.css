@@ -1,0 +1,51 @@
+@media screen and (max-width: 1300px) {
+  .lens-icon {
+    left:180px !important;
+    
+  }
+  
+}
+@media screen and (max-width: 1200px) {
+  .lens-icon {
+    left:120px !important;
+    
+  }
+  
+}
+@media screen and (max-width: 992px) {
+  .lens-icon {
+    left: 550px !important;
+    top: -11px;}
+}
+@media screen and (max-width: 600px) {
+  .lens-icon {
+    left: 300px !important;
+    top: -11px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .lens-icon {
+    left: 200px !important;
+    top: -11px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .lens-icon {
+    left:  190px !important;
+    
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .lens-icon {
+    left: 180px !important;
+    top: -11px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .lens-icon {
+    left: 140px !important;
+    top: -11px;
+  }
+}
+

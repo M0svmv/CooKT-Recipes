@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import { RecipeContext } from "../context/RecipeContext";
 import { useNavigate } from "react-router-dom";
+import "./Search.css";
 
 function RecipeSearch({close}) {
   const navigate = useNavigate();
@@ -35,11 +36,12 @@ function RecipeSearch({close}) {
           onKeyDown={(e) => e.key === "Enter" && handleSearch()}
         />
         <button
-          className="btn btn-outline-secondary bg-transparent border border-0 position-absolute end-0 lens-icon text-warning"
+          className="btn btn-outline-secondary bg-transparent border border-0 position-absolute end-0  lens-icon text-warning"
+          style={{ bottom: "-5px" }}
           type="button"
           id="button-addon2"
           onClick={handleSearch}>
-          <img className="w-100" src={`${process.env.PUBLIC_URL}/imgs/lens (1).png`} alt="lens-pan" />
+          <img className="w-100 lens-pan" src={`${process.env.PUBLIC_URL}/imgs/lens (1).png`} alt="lens-pan" />
         </button>
       </div>
     </>

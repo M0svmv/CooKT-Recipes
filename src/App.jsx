@@ -2,6 +2,7 @@ import "./App.css";
 import Favorites from "./components/Favorites";
 import RecipeProvider from "./context/RecipeContext";
 import PageLayout from "./layout/PageLayout";
+import ErrorPage from "./pages/ErrorPage";
 // import Categories from "./pages/Catigories";
 import Home from "./pages/home";
 import MealDetail from "./pages/MealDetail";
@@ -17,8 +18,8 @@ const router = createBrowserRouter(
     <Route path="/" element={<PageLayout />}>
       <Route index element={<Home />} />
       <Route path="/favorites" element={<Favorites />} />
-      {/* <Route path="/categories" element={<Categories />} /> */}
       <Route path="/meal/:idMeal" element={<MealDetail />} />
+      <Route path="*" element={<ErrorPage />} />
     </Route>
   )
 );
