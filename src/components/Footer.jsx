@@ -1,5 +1,4 @@
 import {
-  FaFacebook,
   FaFacebookSquare,
   FaGithub,
   FaInstagram,
@@ -39,8 +38,7 @@ function Footer() {
                     href="https://www.facebook.com/MOsvmv17"
                     className=" text-decoration-none text-cookit-links"
                     target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                    rel="noopener noreferrer">
                     <FaFacebookSquare /> &nbsp; FaceBook
                   </a>
                 </p>
@@ -49,8 +47,7 @@ function Footer() {
                     href="https://www.instagram.com/m.osama_17/"
                     className="text-cookit-links text-decoration-none"
                     target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                    rel="noopener noreferrer">
                     <FaInstagram /> &nbsp; Instagram
                   </a>
                 </p>

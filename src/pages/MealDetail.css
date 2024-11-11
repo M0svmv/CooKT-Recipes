@@ -106,17 +106,24 @@
 }
 
 @media screen and (max-width: 992px) {
+  .meal-detail {
+    background-image: none;
+    background-color: #eee !important;
+  }
   .details-container {
     flex-direction: column !important;
   }
   .preview-meal {
+    width: 300px !important;
     padding: 15px !important;
   }
-  .preview-meal img{
+  .preview-meal img {
+    width: 150px;
     top: -40px !important;
     left: -70px !important;
   }
   .ingrads {
+    width: 300px !important;
     padding: 20px !important;
   }
 
@@ -124,14 +131,13 @@
     display: none !important;
   }
   .instractions {
-    margin-top: 30px !important;
-    rotate: 0deg !important;
+    background-image: url("../../public/imgs/paper1n.png") !important;
+    rotate: 2deg !important;
     width: 300px !important;
-    padding: 10px !important;
+    padding: 5px !important;
     padding-top: 25px !important;
   }
   .instractions-box {
     padding: 0px !important;
   }
-  
 }

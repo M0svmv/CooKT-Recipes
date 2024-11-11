@@ -3,7 +3,6 @@ import RecipeSearch from "./search";
 import { RecipeContext } from "../context/RecipeContext";
 import { useContext, useState } from "react";
 import "./NavBar.css";
-import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
