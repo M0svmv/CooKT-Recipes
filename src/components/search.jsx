@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { RecipeContext } from "../context/RecipeContext";
 import { useNavigate } from "react-router-dom";
 
-function RecipeSearch() {
+function RecipeSearch({close}) {
   const navigate = useNavigate();
   const { setSearchTerm, inputRef } = useContext(RecipeContext);
   const [search, setSearch] = useState("");
@@ -13,6 +13,9 @@ function RecipeSearch() {
     await setSearchTerm(search)
     setSearch("");
     handleScroll();
+    if (close) close();
+    
+
   };
   return (
     <>

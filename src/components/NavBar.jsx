@@ -152,7 +152,7 @@ function NavBar() {
             <Form
               className="d-flex col-lg-3 col-md-3 col-sm-12"
               onSubmit={(e) => e.preventDefault()}>
-              <RecipeSearch />
+              <RecipeSearch close={() => setIsNavCollapsed(true)} />
             </Form>
           </Navbar.Collapse>
         </Container>
