@@ -5,3 +5,6 @@
   font-size: 1rem !important;
   border: none !important;
 }
+.popover-msg{
+  z-index: 500000 !important;
+}

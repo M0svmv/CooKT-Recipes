@@ -31,7 +31,7 @@ function RandomRecipe() {
       setRunAfterNav(false); // Reset the flag to prevent re-triggering
     }
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location, runAfterNav]);
 
   const handleDismiss = () => {
@@ -39,7 +39,7 @@ function RandomRecipe() {
   };
 
   const popover = (
-    <Popover id="popover-basic">
+    <Popover className="popover-msg" id="popover-basic">
       <Popover.Body className="d-flex justify-content-between align-items-center">
         <span>Need a meal idea? Try a random recipe!</span>
 
