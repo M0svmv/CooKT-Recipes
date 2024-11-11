@@ -63,7 +63,7 @@ export default function App() {
               slidesPerView: 2,
               spaceBetween: 15,
             },
-            768: {
+            992: {
               slidesPerView: 3,
               spaceBetween: 20,
             }
