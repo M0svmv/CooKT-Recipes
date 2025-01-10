@@ -1,6 +1,6 @@
 {
-  "short_name": "CooKT",
-  "name": "CooKT Recipes",
+  "short_name": "COOKT",
+  "name": "COOKT Recipes",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,8 +8,8 @@
       "type": "image/x-icon"
     },
     {
-      "src": "favicon.ico",
-      "type": "image/x-icon",
+      "src": "logo192.png",
+      "type": "image/png",
       "sizes": "192x192"
     },
     {
@@ -17,7 +17,6 @@
       "type": "image/png",
       "sizes": "512x512"
     }
-    
   ],
   "start_url": ".",
   "display": "standalone",
